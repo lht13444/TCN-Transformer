@@ -1,0 +1,149 @@
+{
+  "dataset": "highD recording 03 real-trajectory subset",
+  "dataset_owner": "RWTH Aachen University highD dataset / leveLXData",
+  "tutorial_publisher": "Technical University of Munich CommonRoad project",
+  "tutorial_page": "https://commonroad.in.tum.de/tutorials/static_docs_tutorials_data_preprocessing.html",
+  "tutorial_repository": "https://gitlab.lrz.de/tum-cps/commonroad-rl",
+  "commit": "78cbeeadda8ed19abcc7fefd9d0950d5a79515a7",
+  "access_date": "2026-11-07",
+  "highd_official_page": "https://levelxdata.com/highd-dataset/",
+  "source_files": {
+    "03_tracks.csv": {
+      "api_url": "https://gitlab.lrz.de/api/v4/projects/75284/repository/files/commonroad_rl%2Ftutorials%2Fdata%2FhighD%2Fraw%2Fdata%2F03_tracks.csv/raw?ref=78cbeeadda8ed19abcc7fefd9d0950d5a79515a7",
+      "web_url": "https://gitlab.lrz.de/tum-cps/commonroad-rl/-/blob/78cbeeadda8ed19abcc7fefd9d0950d5a79515a7/commonroad_rl/tutorials/data/highD/raw/data/03_tracks.csv",
+      "upstream_bytes": 34929994,
+      "upstream_sha256_from_gitlab": "28fb1938287f03975f38bea5c6f8d2fabe2a964f11287a48c38fbdc758524958"
+    },
+    "03_tracksMeta.csv": {
+      "api_url": "https://gitlab.lrz.de/api/v4/projects/75284/repository/files/commonroad_rl%2Ftutorials%2Fdata%2FhighD%2Fraw%2Fdata%2F03_tracksMeta.csv/raw?ref=78cbeeadda8ed19abcc7fefd9d0950d5a79515a7",
+      "web_url": "https://gitlab.lrz.de/tum-cps/commonroad-rl/-/blob/78cbeeadda8ed19abcc7fefd9d0950d5a79515a7/commonroad_rl/tutorials/data/highD/raw/data/03_tracksMeta.csv",
+      "upstream_bytes": 73281,
+      "upstream_sha256_from_gitlab": "0051fb82678076a8ba511cc0e13b3e2785ffdd3a4d8ead645af99aba20583f24"
+    },
+    "03_recordingMeta.csv": {
+      "api_url": "https://gitlab.lrz.de/api/v4/projects/75284/repository/files/commonroad_rl%2Ftutorials%2Fdata%2FhighD%2Fraw%2Fdata%2F03_recordingMeta.csv/raw?ref=78cbeeadda8ed19abcc7fefd9d0950d5a79515a7",
+      "web_url": "https://gitlab.lrz.de/tum-cps/commonroad-rl/-/blob/78cbeeadda8ed19abcc7fefd9d0950d5a79515a7/commonroad_rl/tutorials/data/highD/raw/data/03_recordingMeta.csv",
+      "upstream_bytes": 280,
+      "upstream_sha256_from_gitlab": "9250b0d3c1623c9a86c51bdca760c0e34e64ed2e98df189eec0b07dc8a0b8f20"
+    }
+  },
+  "source_track_bytes_streamed": 1599086,
+  "source_recording_vehicle_count": 914,
+  "local_vehicle_count": 6,
+  "local_trajectory_rows": 1781,
+  "sample_rate_hz": 25,
+  "timestep_seconds": 0.04,
+  "units": {
+    "x": "m longitudinal",
+    "y": "m lateral",
+    "xVelocity": "m/s longitudinal",
+    "yVelocity": "m/s lateral",
+    "xAcceleration": "m/s^2",
+    "yAcceleration": "m/s^2"
+  },
+  "selection": "First six vehicle IDs in the pinned metadata with numLaneChanges>0 and numFrames>=120; complete trajectories retained.",
+  "changes": "Removed all other vehicle rows from tracks and tracksMeta. Selected source rows remain byte-for-byte unchanged. No smoothing, resampling, interpolation or synthesized values. Recording metadata remains original and describes the source recording, not the six-vehicle subset.",
+  "software_license_url": "https://gitlab.lrz.de/tum-cps/commonroad-rl/-/blob/78cbeeadda8ed19abcc7fefd9d0950d5a79515a7/LICENSE",
+  "highd_paper_doi": "https://doi.org/10.1109/ITSC.2018.8569552",
+  "trajectories": [
+    {
+      "id": 15,
+      "row_count": 268,
+      "first_frame": 8,
+      "last_frame": 275,
+      "lane_changes": [
+        {
+          "frame": 47,
+          "from_lane": 5,
+          "to_lane": 6,
+          "has_40_before_and_40_from_change": false
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "row_count": 308,
+      "first_frame": 228,
+      "last_frame": 535,
+      "lane_changes": [
+        {
+          "frame": 469,
+          "from_lane": 2,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "row_count": 351,
+      "first_frame": 344,
+      "last_frame": 694,
+      "lane_changes": [
+        {
+          "frame": 427,
+          "from_lane": 5,
+          "to_lane": 6,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "row_count": 291,
+      "first_frame": 636,
+      "last_frame": 926,
+      "lane_changes": [
+        {
+          "frame": 691,
+          "from_lane": 6,
+          "to_lane": 5,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "row_count": 310,
+      "first_frame": 715,
+      "last_frame": 1024,
+      "lane_changes": [
+        {
+          "frame": 993,
+          "from_lane": 6,
+          "to_lane": 5,
+          "has_40_before_and_40_from_change": false
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "row_count": 253,
+      "first_frame": 778,
+      "last_frame": 1030,
+      "lane_changes": [
+        {
+          "frame": 938,
+          "from_lane": 2,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    }
+  ],
+  "local_files": {
+    "03_tracks.csv": {
+      "bytes": 194058,
+      "sha256": "f4f7a690f6ad725321d7bb767056d7d004d7401e753c7fcbdb0dc9ba9c30d9bd"
+    },
+    "03_tracksMeta.csv": {
+      "bytes": 613,
+      "sha256": "088b3a5da2a2f63edcc33d0e0fd5a9bbeff63effa907aeac8d3f4b816cdfff1f"
+    },
+    "03_recordingMeta.csv": {
+      "bytes": 280,
+      "sha256": "9250b0d3c1623c9a86c51bdca760c0e34e64ed2e98df189eec0b07dc8a0b8f20"
+    }
+  },
+  "data_terms": "Use of highD data follows the original dataset terms at highd_official_page."
+}

@@ -1,0 +1,348 @@
+{
+  "dataset": "NGSIM US-101",
+  "not_highd": true,
+  "official_title": "Next Generation Simulation (NGSIM) Vehicle Trajectories and Supporting Data",
+  "publisher": "U.S. Department of Transportation Federal Highway Administration",
+  "dataset_page": "https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajector/8ect-6jqj",
+  "doi": "https://doi.org/10.21949/1504477",
+  "metadata_api": "https://data.transportation.gov/api/views/8ect-6jqj.json",
+  "license_id": "CC_30_BY_SA",
+  "license_name": "Creative Commons Attribution | Share Alike 3.0 Unported",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "access_date": "2026-11-07",
+  "sample_frequency_hz": 10,
+  "timestep_seconds": 0.1,
+  "original_units": {
+    "local_x": "feet lateral",
+    "local_y": "feet longitudinal",
+    "v_vel": "feet/second",
+    "v_acc": "feet/second^2",
+    "global_time": "milliseconds per source definition",
+    "space_headway": "feet",
+    "time_headway": "seconds"
+  },
+  "changes_to_data": "Selected 12 complete mainline lane-changing vehicle trajectories. JSON pretty-printing and CSV serialization only; numerical values and original API field names retained. No interpolation, smoothing or resampling.",
+  "row_count": 6783,
+  "vehicle_count": 12,
+  "summary_api_url": "https://data.transportation.gov/resource/8ect-6jqj.json?%24select=vehicle_id%2Ctotal_frames%2Cmin%28global_time%29+as+t0%2Cmax%28global_time%29+as+t1%2Cmin%28lane_id%29+as+lane_min%2Cmax%28lane_id%29+as+lane_max%2Ccount%28%2A%29+as+n&%24where=location%3D%27us-101%27+AND+vehicle_id+%3C+101+AND+total_frames+%3E+100&%24group=vehicle_id%2Ctotal_frames&%24order=vehicle_id%2Ctotal_frames&%24limit=300",
+  "data_api_url": "https://data.transportation.gov/resource/8ect-6jqj.json?%24where=location%3D%27us-101%27+AND+%28%28vehicle_id%3D2+AND+total_frames%3D437+AND+global_time+between+1118846980200+and+1118847023800%29+OR+%28vehicle_id%3D6+AND+total_frames%3D577+AND+global_time+between+1118847871800+and+1118847929400%29+OR+%28vehicle_id%3D9+AND+total_frames%3D714+AND+global_time+between+1118848766000+and+1118848837300%29+OR+%28vehicle_id%3D11+AND+total_frames%3D654+AND+global_time+between+1118847866400+and+1118847931700%29+OR+%28vehicle_id%3D12+AND+total_frames%3D658+AND+global_time+between+1118848770000+and+1118848835700%29+OR+%28vehicle_id%3D20+AND+total_frames%3D636+AND+global_time+between+1118847870500+and+1118847934000%29+OR+%28vehicle_id%3D31+AND+total_frames%3D465+AND+global_time+between+1118846985200+and+1118847031600%29+OR+%28vehicle_id%3D37+AND+total_frames%3D408+AND+global_time+between+1118846990900+and+1118847031600%29+OR+%28vehicle_id%3D39+AND+total_frames%3D756+AND+global_time+between+1118848782800+and+1118848858300%29+OR+%28vehicle_id%3D40+AND+total_frames%3D391+AND+global_time+between+1118846989300+and+1118847028300%29+OR+%28vehicle_id%3D43+AND+total_frames%3D708+AND+global_time+between+1118848778800+and+1118848849500%29+OR+%28vehicle_id%3D44+AND+total_frames%3D379+AND+global_time+between+1118846991700+and+1118847029500%29%29&%24order=vehicle_id%2Cglobal_time%2Cframe_id&%24limit=15000",
+  "trajectories": [
+    {
+      "vehicle_id": "2",
+      "total_frames": "437",
+      "t0": "1118846980200",
+      "t1": "1118847023800",
+      "lane_min": "1",
+      "lane_max": "2",
+      "n": "437",
+      "row_count": 437,
+      "first_frame": 13,
+      "last_frame": 449,
+      "lane_changes": [
+        {
+          "frame_id": 207,
+          "global_time": 1118846999600,
+          "from_lane": 2,
+          "to_lane": 1,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "6",
+      "total_frames": "577",
+      "t0": "1118847871800",
+      "t1": "1118847929400",
+      "lane_min": "4",
+      "lane_max": "5",
+      "n": "577",
+      "row_count": 577,
+      "first_frame": 298,
+      "last_frame": 874,
+      "lane_changes": [
+        {
+          "frame_id": 577,
+          "global_time": 1118847899700,
+          "from_lane": 5,
+          "to_lane": 4,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "9",
+      "total_frames": "714",
+      "t0": "1118848766000",
+      "t1": "1118848837300",
+      "lane_min": "2",
+      "lane_max": "5",
+      "n": "714",
+      "row_count": 714,
+      "first_frame": 90,
+      "last_frame": 803,
+      "lane_changes": [
+        {
+          "frame_id": 131,
+          "global_time": 1118848770100,
+          "from_lane": 5,
+          "to_lane": 4,
+          "has_40_before_and_40_from_change": true
+        },
+        {
+          "frame_id": 422,
+          "global_time": 1118848799200,
+          "from_lane": 4,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": true
+        },
+        {
+          "frame_id": 722,
+          "global_time": 1118848829200,
+          "from_lane": 3,
+          "to_lane": 2,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "11",
+      "total_frames": "654",
+      "t0": "1118847866400",
+      "t1": "1118847931700",
+      "lane_min": "3",
+      "lane_max": "4",
+      "n": "654",
+      "row_count": 654,
+      "first_frame": 244,
+      "last_frame": 897,
+      "lane_changes": [
+        {
+          "frame_id": 871,
+          "global_time": 1118847929100,
+          "from_lane": 3,
+          "to_lane": 4,
+          "has_40_before_and_40_from_change": false
+        },
+        {
+          "frame_id": 877,
+          "global_time": 1118847929700,
+          "from_lane": 4,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": false
+        }
+      ]
+    },
+    {
+      "vehicle_id": "12",
+      "total_frames": "658",
+      "t0": "1118848770000",
+      "t1": "1118848835700",
+      "lane_min": "2",
+      "lane_max": "3",
+      "n": "658",
+      "row_count": 658,
+      "first_frame": 130,
+      "last_frame": 787,
+      "lane_changes": [
+        {
+          "frame_id": 466,
+          "global_time": 1118848803600,
+          "from_lane": 3,
+          "to_lane": 2,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "20",
+      "total_frames": "636",
+      "t0": "1118847870500",
+      "t1": "1118847934000",
+      "lane_min": "4",
+      "lane_max": "5",
+      "n": "636",
+      "row_count": 636,
+      "first_frame": 285,
+      "last_frame": 920,
+      "lane_changes": [
+        {
+          "frame_id": 900,
+          "global_time": 1118847932000,
+          "from_lane": 4,
+          "to_lane": 5,
+          "has_40_before_and_40_from_change": false
+        },
+        {
+          "frame_id": 910,
+          "global_time": 1118847933000,
+          "from_lane": 5,
+          "to_lane": 4,
+          "has_40_before_and_40_from_change": false
+        },
+        {
+          "frame_id": 917,
+          "global_time": 1118847933700,
+          "from_lane": 4,
+          "to_lane": 5,
+          "has_40_before_and_40_from_change": false
+        }
+      ]
+    },
+    {
+      "vehicle_id": "31",
+      "total_frames": "465",
+      "t0": "1118846985200",
+      "t1": "1118847031600",
+      "lane_min": "4",
+      "lane_max": "5",
+      "n": "465",
+      "row_count": 465,
+      "first_frame": 63,
+      "last_frame": 527,
+      "lane_changes": [
+        {
+          "frame_id": 359,
+          "global_time": 1118847014800,
+          "from_lane": 5,
+          "to_lane": 4,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "37",
+      "total_frames": "408",
+      "t0": "1118846990900",
+      "t1": "1118847031600",
+      "lane_min": "2",
+      "lane_max": "3",
+      "n": "408",
+      "row_count": 408,
+      "first_frame": 120,
+      "last_frame": 527,
+      "lane_changes": [
+        {
+          "frame_id": 161,
+          "global_time": 1118846995000,
+          "from_lane": 3,
+          "to_lane": 2,
+          "has_40_before_and_40_from_change": true
+        },
+        {
+          "frame_id": 517,
+          "global_time": 1118847030600,
+          "from_lane": 2,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": false
+        }
+      ]
+    },
+    {
+      "vehicle_id": "39",
+      "total_frames": "756",
+      "t0": "1118848782800",
+      "t1": "1118848858300",
+      "lane_min": "3",
+      "lane_max": "4",
+      "n": "756",
+      "row_count": 756,
+      "first_frame": 258,
+      "last_frame": 1013,
+      "lane_changes": [
+        {
+          "frame_id": 962,
+          "global_time": 1118848853200,
+          "from_lane": 4,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "40",
+      "total_frames": "391",
+      "t0": "1118846989300",
+      "t1": "1118847028300",
+      "lane_min": "3",
+      "lane_max": "4",
+      "n": "391",
+      "row_count": 391,
+      "first_frame": 104,
+      "last_frame": 494,
+      "lane_changes": [
+        {
+          "frame_id": 274,
+          "global_time": 1118847006300,
+          "from_lane": 4,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "43",
+      "total_frames": "708",
+      "t0": "1118848778800",
+      "t1": "1118848849500",
+      "lane_min": "1",
+      "lane_max": "2",
+      "n": "708",
+      "row_count": 708,
+      "first_frame": 218,
+      "last_frame": 925,
+      "lane_changes": [
+        {
+          "frame_id": 468,
+          "global_time": 1118848803800,
+          "from_lane": 1,
+          "to_lane": 2,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    },
+    {
+      "vehicle_id": "44",
+      "total_frames": "379",
+      "t0": "1118846991700",
+      "t1": "1118847029500",
+      "lane_min": "1",
+      "lane_max": "3",
+      "n": "379",
+      "row_count": 379,
+      "first_frame": 128,
+      "last_frame": 506,
+      "lane_changes": [
+        {
+          "frame_id": 219,
+          "global_time": 1118847000800,
+          "from_lane": 1,
+          "to_lane": 2,
+          "has_40_before_and_40_from_change": true
+        },
+        {
+          "frame_id": 327,
+          "global_time": 1118847011600,
+          "from_lane": 2,
+          "to_lane": 3,
+          "has_40_before_and_40_from_change": true
+        }
+      ]
+    }
+  ],
+  "files": {
+    "ngsim_us101_12vehicles.json": {
+      "sha256": "4622c2ee8f75038641d7f27f2d329223593d8db0ee2b07b125dfb9c9f4b8b78f",
+      "bytes": 4358202
+    },
+    "ngsim_us101_12vehicles.csv": {
+      "sha256": "688c7068e67c29a6a6f3247552a09371d746218c964403d74178fad2c73f5e7a",
+      "bytes": 865184
+    },
+    "official_metadata.json": {
+      "sha256": "ed9e47a19ff4aab35cafca8e252a6e87d639b78abe4ad8a716b81124a04c6ecf",
+      "bytes": 56732
+    }
+  },
+  "citation": "U.S. Department of Transportation Federal Highway Administration. (2016). Next Generation Simulation (NGSIM) Vehicle Trajectories and Supporting Data. [Dataset]. Provided by ITS DataHub through Data.transportation.gov. Accessed 2026-11-07 from https://doi.org/10.21949/1504477",
+  "purpose": "Small real-data software demonstration. Not the HighD experiments in the manuscript and not evidence for the reported manuscript metrics."
+}

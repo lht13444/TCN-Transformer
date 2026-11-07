@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+outputs/
+.pytest_cache/
+data/highd_sample/*.csv
