@@ -49,3 +49,5 @@ python scripts/inspect_sample.py --input data/raw_samples/ngsim_us101_12vehicles
 ```
 
 Sources, units, and file checksums are recorded in the data directories. See the [HighD source notice](data/highd_sample/SOURCE_NOTICE.md) and [NGSIM data notice](data/raw_samples/DATA_LICENSE.md).
+
+The software is licensed under the [MIT License](LICENSE). Third-party datasets retain the terms stated in their data directories.
